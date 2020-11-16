@@ -1,0 +1,18 @@
+[package]
+name = "rs"
+version = "0.1.0"
+authors = ["mohanson <mohanson@outlook.com>"]
+edition = "2018"
+default-run = "int64"
+
+[[bin]]
+name = "int64"
+path = "src/main_interpreter64.rs"
+
+[[bin]]
+name = "int32"
+path = "src/main_interpreter32.rs"
+
+[dependencies]
+bytes = "0.5.4"
+ckb-vm = { path="/src/ckb-vm" }
