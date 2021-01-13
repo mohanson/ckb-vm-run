@@ -11,7 +11,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let core_machine = ckb_vm::DefaultCoreMachine::<u32, ckb_vm::SparseMemory<u32>>::new(
         convention::ISA,
         convention::VERSION,
-        1 << 32,
+        u64::MAX,
     );
 
     let machine_builder = ckb_vm::DefaultMachineBuilder::new(core_machine)
