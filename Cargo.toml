@@ -13,6 +13,10 @@ path = "src/main_interpreter64.rs"
 name = "int32"
 path = "src/main_interpreter32.rs"
 
+[[bin]]
+name = "asm"
+path = "src/main_asm.rs"
+
 [dependencies]
 bytes = "0.5.4"
-ckb-vm = { path="/src/ckb-vm" }
+ckb-vm = { path="/src/ckb-vm", features=["asm"] }
