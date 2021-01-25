@@ -19,4 +19,4 @@ path = "src/main_asm.rs"
 
 [dependencies]
 bytes = "0.5.4"
-ckb-vm = { path="/src/ckb-vm", features=["asm"] }
+ckb-vm = { git="https://github.com/mohanson/ckb-vm", branch="bextension", features=["asm"] }
