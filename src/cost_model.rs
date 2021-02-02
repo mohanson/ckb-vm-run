@@ -54,7 +54,6 @@ pub fn instruction_cycles(i: Instruction) -> u64 {
         insts::OP_REMW => 16,
         insts::OP_REMU => 16,
         insts::OP_REMUW => 16,
-        insts::OP_CLZ => 3,
         _ => 1,
     }
 }
