@@ -33,7 +33,6 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 [[package]]
 name = "ckb-vm"
 version = "0.19.1"
-source = "git+https://github.com/mohanson/ckb-vm?branch=bextension#13c5f6640212e5d8f786ccac946cbd9ccbf39bba"
 dependencies = [
  "byteorder",
  "bytes",
@@ -51,7 +50,6 @@ dependencies = [
 [[package]]
 name = "ckb-vm-definitions"
 version = "0.19.1"
-source = "git+https://github.com/mohanson/ckb-vm?branch=bextension#13c5f6640212e5d8f786ccac946cbd9ccbf39bba"
 
 [[package]]
 name = "derive_more"
