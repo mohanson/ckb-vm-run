@@ -3,11 +3,15 @@ name = "rs"
 version = "0.1.0"
 authors = ["mohanson <mohanson@outlook.com>"]
 edition = "2018"
-default-run = "int"
+default-run = "int64"
 
 [[bin]]
-name = "int"
-path = "src/main_int.rs"
+name = "int32"
+path = "src/main_int32.rs"
+
+[[bin]]
+name = "int64"
+path = "src/main_int64.rs"
 
 [[bin]]
 name = "asm"
