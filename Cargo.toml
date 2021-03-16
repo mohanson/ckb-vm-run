@@ -23,4 +23,4 @@ path = "src/main_aot.rs"
 
 [dependencies]
 bytes = "0.5.4"
-ckb-vm = { path = "/src/ckb-vm", features=["asm"] }
+ckb-vm = { git = "https://github.com/nervosnetwork/ckb-vm", branch="develop", features=["asm"] }
