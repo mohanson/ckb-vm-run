@@ -1,6 +1,5 @@
 use ckb_vm::SupportMachine;
 
-mod convention;
 mod cost_model;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -9,8 +8,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let code = bytes::Bytes::from(code_data);
 
     let core_machine = ckb_vm::DefaultCoreMachine::<u64, ckb_vm::SparseMemory<u64>>::new(
-        convention::ISA,
-        convention::VERSION,
+        ckb_vm::ISA_IMC | ckb_vm::ISA_B,
+        ckb_vm::machine::VERSION1,
         u64::MAX,
     );
 
