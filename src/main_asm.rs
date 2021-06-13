@@ -4,8 +4,7 @@ mod cost_model;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<String> = std::env::args().collect();
-    let code_data = std::fs::read(&args[1])?;
-    let code = bytes::Bytes::from(code_data);
+    let code = std::fs::read(&args[1])?.into();
 
     let asm_core = ckb_vm::machine::asm::AsmCoreMachine::new(
         ckb_vm::ISA_IMC | ckb_vm::ISA_B,

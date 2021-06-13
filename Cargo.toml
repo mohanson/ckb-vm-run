@@ -26,6 +26,4 @@ name = "mop"
 path = "src/main_mop.rs"
 
 [dependencies]
-bytes = "0.5.4"
-# ckb-vm = { git = "https://github.com/nervosnetwork/ckb-vm", branch="develop", features=["asm"] }
 ckb-vm = { path="/src/ckb-vm", features=["asm"] }
