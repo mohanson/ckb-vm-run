@@ -26,7 +26,7 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "ckb-vm"
-version = "0.20.0-alpha"
+version = "0.20.0-alpha2"
 dependencies = [
  "byteorder",
  "bytes",
@@ -44,7 +44,7 @@ dependencies = [
 
 [[package]]
 name = "ckb-vm-definitions"
-version = "0.20.0-alpha"
+version = "0.20.0-alpha2"
 
 [[package]]
 name = "derive_more"
